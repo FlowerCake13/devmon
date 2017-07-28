@@ -45,7 +45,7 @@ To complete Part II, fulfill the following requirements:
   var audio1 = new Audio('assets/sound-1.wav');
   audio1.play();
   ```
-  * Within the new Audio parenthesis is the path to the sound. The backslash represents a "jump" into a folder or file. In this case, we are jumping into the assets folder and selecting the sound-1.wav sound file. `audio1.play()` will play the sound. 
+  * Within the new Audio parenthesis is the path to the sound. The backslash represents a "jump" into a folder or file. In this case, we are jumping into the assets folder and selecting the sound-1.wav sound file. `audio1.play()` will play the sound.
 * Enlarge the image
   * Change CSS styles with JavaScript! Change the style in JavaScript by following this syntax.
   ```javascript
@@ -54,7 +54,7 @@ To complete Part II, fulfill the following requirements:
     button.style.width = "80%";
   }
   ```
-  * This is the syntax to change CSS properties in JavaScript: [Element].style.[Property] = "[Value]";
+  * This is the syntax to change CSS properties in JavaScript: [Element].style.[Property] = "[Value]". Only one image should be enlarged at a time!
 * Change the inner HTML of the textbox to show the name of the Devmon  
 
 ### Part III
@@ -62,6 +62,11 @@ To complete Part II, fulfill the following requirements:
 To complete Part III, fulfill the following requirements:
 1. Create a **click function** on the button. When you click on the button, the following should happen:
 * The enlarged Devball image will show a Devmon! You can use the Devmon images in the images folder or find your own
+  * Change the source of an image in JavaScript by using the following syntax. 
+  ```javascript
+  var image = document.getElementById('myImage');
+  image.src = "assets/devmon0.png";
+  ```
 * The `theme.wav` sound will play
 
 ### Stretch Goals
