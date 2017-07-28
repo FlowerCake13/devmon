@@ -28,6 +28,6 @@ To complete Part I, fulfill the following requirements:
 * Folder called `assets` to store your images and sound
 3. Link all of your files correctly.
 4. Create an `HTML` mockup of how you'd like the Devmon starter layout to look like. You can reference the layout in the `images` folder for inspiration. You will need at least the following on your page:
-  * 3 image sections to display the Devmons
-  * 1 section to display the Devmon name
-  * 1 button
+    * 3 image sections to display the Devmons
+    * 1 section to display the Devmon name
+    * 1 button
