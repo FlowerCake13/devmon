@@ -44,8 +44,16 @@ To complete Part II, fulfill the following requirements:
   ```javascript
   var audio1 = new Audio('assets/sound-1.wav');
   ```
-  * Within the parenthesis is the path to the sound. The backslash represents a "jump" into a folder or file. In this case, we are jumping into the assets folder and selecting the sound-1.wav sound file. 
+  * Within the parenthesis is the path to the sound. The backslash represents a "jump" into a folder or file. In this case, we are jumping into the assets folder and selecting the sound-1.wav sound file.
 * Enlarge the image
+  * Change CSS styles with JavaScript! Change the style in JavaScript by following this syntax.
+  ```javascript
+  button.onclick = function() {
+    button.style.height = "80%";
+    button.style.width = "80%";
+  }
+  ```
+  * This is the syntax to change CSS properties in JavaScript: [Element].style.[Property] = "[Value]"; 
 * Change the inner HTML of the textbox to show the name of the Devmon  
 
 ### Part III
