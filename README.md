@@ -47,8 +47,8 @@ To complete Part II, fulfill the following requirements:
 
 To complete Part III, fulfill the following requirements:
 1. Create a **click function** on the button. When you click on the button, the following should happen:
-* The enlarged Devball image will show the Devmon
-* The `theme.wav` sound will play 
+* The enlarged Devball image will show a Devmon! You can use the Devmon images in the images folder or find your own
+* The `theme.wav` sound will play
 
 ### Stretch Goals
 
