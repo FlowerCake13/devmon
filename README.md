@@ -28,6 +28,17 @@ To complete Part I, fulfill the following requirements:
 * Folder called `assets` to store your images and sound
 3. Link all of your files correctly.
 4. Create an `HTML` mockup of how you'd like the Devmon starter layout to look like. You can reference the layout in the `images` folder for inspiration. You will need at least the following on your page:
-    * 3 image sections to display the Devmons
-    * 1 section to display the Devmon name
-    * 1 button
+* 3 image sections to display the Devmons
+* 1 textbox section to display the Devmon name
+* 1 button
+5. Show an instructor for approval! :)
+6. Create the HTML and CSS for your page.
+
+### Part II
+
+To complete Part II, fulfill the following requirements:
+1. Go to http://www.bfxr.net/ to create your Devmon battle cry. Export it as a wav file and place it in your `assets` folder. Create 3 or use the pre-made battle cries in the sound folder.
+2. Create a **click function** on the Devball image. When you click an image, it should do the following:
+* Play a battle cry
+* Enlarge the image
+* Change the inner HTML of the textbox to show the name of the Devmon  
