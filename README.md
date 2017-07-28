@@ -40,6 +40,11 @@ To complete Part II, fulfill the following requirements:
 1. Go to http://www.bfxr.net/ to create your Devmon battle cry. Export it as a wav file and place it in your `assets` folder. Create 3 or use the pre-made battle cries in the sound folder.
 2. Create a **click function** on the Devball image. When you click an image, the following should happen:
 * Play a battle cry
+  * Add sound using JavaScript! Create a new Audio by following this syntax.
+  ```javascript
+  var audio1 = new Audio('assets/sound-1.wav');
+  ```
+  * Within the parenthesis is the path to the sound. The backslash represents a "jump" into a folder or file. In this case, we are jumping into the assets folder and selecting the sound-1.wav sound file. 
 * Enlarge the image
 * Change the inner HTML of the textbox to show the name of the Devmon  
 
