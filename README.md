@@ -45,7 +45,7 @@ To complete Part II, fulfill the following requirements:
   var audio1 = new Audio('assets/sound-1.wav');
   audio1.play();
   ```
-  * Within the parenthesis is the path to the sound. The backslash represents a "jump" into a folder or file. In this case, we are jumping into the assets folder and selecting the sound-1.wav sound file. `audio1.play()` will play the sound. 
+  * Within the new Audio parenthesis is the path to the sound. The backslash represents a "jump" into a folder or file. In this case, we are jumping into the assets folder and selecting the sound-1.wav sound file. `audio1.play()` will play the sound. 
 * Enlarge the image
   * Change CSS styles with JavaScript! Change the style in JavaScript by following this syntax.
   ```javascript
