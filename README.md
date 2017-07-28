@@ -38,7 +38,24 @@ To complete Part I, fulfill the following requirements:
 
 To complete Part II, fulfill the following requirements:
 1. Go to http://www.bfxr.net/ to create your Devmon battle cry. Export it as a wav file and place it in your `assets` folder. Create 3 or use the pre-made battle cries in the sound folder.
-2. Create a **click function** on the Devball image. When you click an image, it should do the following:
+2. Create a **click function** on the Devball image. When you click an image, the following should happen:
 * Play a battle cry
 * Enlarge the image
 * Change the inner HTML of the textbox to show the name of the Devmon  
+
+### Part III
+
+To complete Part III, fulfill the following requirements:
+1. Create a **click function** on the button. When you click on the button, the following should happen:
+* The enlarged Devball image will show the Devmon
+* The `theme.wav` sound will play 
+
+### Stretch Goals
+
+* Pretty up your page.
+* Add a CSS animation upon hovering over a Devball image.
+* Use a `case switch` statement in your JavaScript logic.
+
+## Resources
+* https://www.w3schools.com/jsref/prop_html_innerhtml.asp
+* https://www.w3schools.com/js/js_htmldom_events.asp
