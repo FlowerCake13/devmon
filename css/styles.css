@@ -1,0 +1,27 @@
+body{
+	text-align: center;
+	font-family: 'Sarala', sans-serif;
+	font-weight: bold;
+}
+
+#imgWrapper{
+	margin-bottom: 35px;
+	display: flex;
+	justify-content: center;
+}
+
+#img1, #img2, #img3{
+	margin: 20px;
+}
+
+#img1:hover{
+	transform: scale(1.2, 1.2);
+}
+
+#img2:hover{
+	transform: scale(1.2, 1.2);
+}
+
+#img3:hover{
+	transform: scale(1.2, 1.2);
+}
