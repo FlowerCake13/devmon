@@ -8,6 +8,12 @@ var img1 = document.getElementById('devmon1');
 var img2 = document.getElementById('devmon2');
 var img3 = document.getElementById('devmon3');
 
+let container = document.getElementById('wrapperThing');
+let x;
+let y;
+var arrayThing = [];
+var cord = document.getElementById("cord");
+
 console.log(textName.innerHTML)
 
 img1.onclick = function(){
@@ -57,4 +63,34 @@ button.onclick = function(){
 		img3.src = "assets/totodile.png";
 	}
 	themeSong.play();
+}
+
+document.addEventListener('mousemove', function(){
+	x = event.clientX;
+	y = event.clientY;
+	cord.innerHTML = 'x' + x + ' y' + y;
+})
+
+let interval = setInterval(create, 100);
+
+function create(){
+	if (x > 269 && y > 255 || x < 261 && x > 175 || y < 119) {
+		let randomNumber = Math.floor(Math.random() * 40 + 10);
+	let newDiv = document.createElement('div');
+	newDiv.className += ' divClass';
+	newDiv.style.height = randomNumber + 'px';
+	newDiv.style.width = randomNumber + 'px';
+	newDiv.style.backgroundColor = '#ddfec9';
+	newDiv.style.position = 'absolute';
+	newDiv.style.left = x + 'px';
+	newDiv.style.top = y + 'px';
+	container.appendChild(newDiv);
+	arrayThing.push(newDiv);
+	let classId = document.getElementsByClassName('divClass');
+	if (arrayThing.length >= 13) {
+		classId[0].parentNode.removeChild(classId[0]);
+	}
+	
+		console.log(arrayThing);
+	}
 }
