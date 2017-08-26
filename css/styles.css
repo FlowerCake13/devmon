@@ -28,12 +28,22 @@ body{
 
 @keyframes keyframeThing{
 	0% {opacity: 1;}
-	70% {background-color: #F6FE01;}
-	100% {top: 0px;}
+	/*70% {background-color: #F6FE01;}
+*/	100% {top: 0px;}
 	100% {opacity: 0;}
 }
 
 .divClass{
+	animation: keyframeThing 4s;
+	opacity: 0;
+}
+
+.divClassRed{
+	animation: keyframeThing 4s;
+	opacity: 0;
+}
+
+.divClassBlue{
 	animation: keyframeThing 4s;
 	opacity: 0;
 }

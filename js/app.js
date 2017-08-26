@@ -12,6 +12,8 @@ let container = document.getElementById('wrapperThing');
 let x;
 let y;
 var arrayThing = [];
+var arrayThingRed = [];
+var arrayThingBlue = [];
 var cord = document.getElementById("cord");
 
 console.log(textName.innerHTML)
@@ -74,23 +76,58 @@ document.addEventListener('mousemove', function(){
 let interval = setInterval(create, 100);
 
 function create(){
-	if (x > 269 && y > 255 || x < 261 && x > 175 || y < 119) {
+	if (x < 300 || x > 800 && y > 255 || x < 261 && x > 175 || y < 119) {
 		let randomNumber = Math.floor(Math.random() * 40 + 10);
-	let newDiv = document.createElement('div');
-	newDiv.className += ' divClass';
-	newDiv.style.height = randomNumber + 'px';
-	newDiv.style.width = randomNumber + 'px';
-	newDiv.style.backgroundColor = '#ddfec9';
-	newDiv.style.position = 'absolute';
-	newDiv.style.left = x + 'px';
-	newDiv.style.top = y + 'px';
-	container.appendChild(newDiv);
-	arrayThing.push(newDiv);
-	let classId = document.getElementsByClassName('divClass');
-	if (arrayThing.length >= 13) {
-		classId[0].parentNode.removeChild(classId[0]);
+		let newDiv = document.createElement('div');
+		newDiv.className += ' divClass';
+		newDiv.style.height = randomNumber + 'px';
+		newDiv.style.width = randomNumber + 'px';
+		newDiv.style.backgroundColor = '#ddfec9';
+		newDiv.style.position = 'absolute';
+		newDiv.style.left = x + 'px';
+		newDiv.style.top = y + 'px';
+		container.appendChild(newDiv);
+		arrayThing.push(newDiv);
+		let classId = document.getElementsByClassName('divClass');
+		if (arrayThing.length >= 13) {
+			classId[0].parentNode.removeChild(classId[0]);
+		}
 	}
-	
-		console.log(arrayThing);
+
+	if (x < 300 || x > 800 && y > 255 || x < 261 && x > 175 || y < 119) {
+		let randomNumber = Math.floor(Math.random() * 40 + 10);
+		let newDivRed = document.createElement('div');
+		newDivRed.className += ' divClassRed';
+		newDivRed.style.height = randomNumber + 'px';
+		newDivRed.style.width = randomNumber + 'px';
+		newDivRed.style.backgroundColor = '#fec9c9';
+		newDivRed.style.position = 'absolute';
+		newDivRed.style.left = x + 'px';
+		newDivRed.style.top = y + 'px';
+		container.appendChild(newDivRed);
+		arrayThingRed.push(newDivRed);
+		let classIdRed = document.getElementsByClassName('divClassRed');
+		if (arrayThingRed.length >= 13) {
+			classIdRed[0].parentNode.removeChild(classIdRed[0]);
+		}
 	}
+
+	if (x < 300 || x > 800 && y > 255 || x < 261 && x > 175 || y < 119) {
+		let randomNumber = Math.floor(Math.random() * 40 + 10);
+		let newDivBlue = document.createElement('div');
+		newDivBlue.className += ' divClassBlue';
+		newDivBlue.style.height = randomNumber + 'px';
+		newDivBlue.style.width = randomNumber + 'px';
+		newDivBlue.style.backgroundColor = '#c9f6fe';
+		newDivBlue.style.position = 'absolute';
+		newDivBlue.style.left = x + 'px';
+		newDivBlue.style.top = y + 'px';
+		container.appendChild(newDivBlue);
+		arrayThingBlue.push(newDivBlue);
+		let classId = document.getElementsByClassName('divClassBlue');
+		if (arrayThingBlue.length >= 13) {
+			classId[0].parentNode.removeChild(classId[0]);
+		}
+		console.log(arrayThingBlue);
+	}		
 }
